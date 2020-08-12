@@ -1,0 +1,109 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+
+  nav {
+    overflow-y: initial;
+    background-color: #88BBD6;
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    z-index: 999;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  .navbar-header .navbar-brand:hover {
+    background-color: #E9E9E9;
+  }
+
+  li:hover {
+    background-color: #E9E9E9;
+  }
+
+  @keyframes colorchange {
+    0% {background-color: #88BBD6;}
+    10% {background-color: red;}
+    20% {background-color: orange;}
+    30% {background-color: yellow;}
+    40% {background-color: green;}
+    50% {background-color: blue;}
+    60% {background-color: purple;}
+    70% {background-color: black;}
+    80% {background-color: gray;}
+    90% {background-color: white;}
+    100% {background-color: #88BBD6;}
+  }
+
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+  }
+
+  .dropdown .dropdown-menu {
+    height: auto;
+    font-size: 18px;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.vox-cdn.com/thumbor/RVhobHgNC4xy7NSqXvVs13OdJIk=/0x0:4000x4000/1200x800/filters:focal(1680x1680:2320x2320)/cdn.vox-cdn.com/uploads/chorus_image/image/55649931/IM_Photo5.0.jpg");
+    z-index: -1;
+    /* Set a specific height */
+    min-height: 600px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page1 {
+    background-color: #E9E9E9;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: auto;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .page2 {
+      background-color: #d9d9d9;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #cdcdcd;
+    color: black;
+    text-align: center;
+ }
