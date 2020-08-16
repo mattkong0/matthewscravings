@@ -16,8 +16,13 @@ body {
     animation-iteration-count: infinite;
   }
 
+  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
   .navbar-header .navbar-brand:hover {
+    float: none;
+    width: 100%;
     background-color: #E9E9E9;
+    }
   }
 
   li:hover {
@@ -55,14 +60,6 @@ body {
     font-size: 18px;
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center;
-  }
-
-  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-    }
   }
 
   .parallax {
