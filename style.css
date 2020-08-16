@@ -17,7 +17,7 @@ body {
   }
 
   /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 400px) {
   .navbar-header .navbar-brand:hover {
     float: none;
     width: 100%;
