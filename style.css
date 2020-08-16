@@ -57,6 +57,14 @@ body {
     transform-origin: top center;
   }
 
+  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+    }
+  }
+
   .parallax {
     /* The image used */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.vox-cdn.com/thumbor/RVhobHgNC4xy7NSqXvVs13OdJIk=/0x0:4000x4000/1200x800/filters:focal(1680x1680:2320x2320)/cdn.vox-cdn.com/uploads/chorus_image/image/55649931/IM_Photo5.0.jpg");
