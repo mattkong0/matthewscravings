@@ -14,6 +14,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <title>Recommendations - Matthew's Cravings</title>
+
+        <!--Google Maps API-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8_xv0EAF6T09chYDnTyHxG-0PeGE0qAg&libraries=places"></script>
     
         <!-- import the webpage's stylesheet -->
         <link rel="stylesheet" href="recommendations.css">
@@ -21,6 +24,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="recommendations.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
     <body>
@@ -34,22 +38,19 @@
               <ul style="float: right;" class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">What Am I Craving?
                   <i class="fa fa-caret-down"></i></a>
                   <ul class="dropdown-menu">
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="boba.html">Boba</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="ramen.html">Ramen</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="poke.html">Poke</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="dessert.html">Dessert</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="brunch.html">Brunch</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="coffee.html">Coffee</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="international.html">International</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="domestic.html">Across the States</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="sandiego.html">San Diego</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="dessert.html">Dessert</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="korea.html">Korean</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="poke.html">Poke</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="ramen.html">Ramen</a></li>
                   </ul>
                 </li>
-                <li><a href="recommendations.html">What Am I Craving?</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li><a href="recommendations.html">Find My Craving</a></li>
               </ul>
             </div>
         </nav>
@@ -72,90 +73,129 @@
         </div>
 
         <!-- the rest of the page -->
-        <div class="page">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <br>
-                <br>
-                <br>
-                <h1 style="font-family: 'Chewy', cursive;">Lou's Sandwiches</h1>
-                <h3 style="font-family: 'Poppins', sans-serif; margin-left: -50px;">Located in San Francisco, it is one of the many hotspots for people who just want to grab a bite and head back to school before class.</h3>
-                <br>
-                <br>
-                <ul>
-                  <li style="font-size: 21px; margin-left: -50px;">Great sandwiches</li>
-                  <br>
-                  <li style="font-size: 21px; margin-left: -50px;">Lots of options</li>
-                  <br>
-                  <li style="font-size: 21px; margin-left: -50px;">Recommend Italian Special</li>
-                </ul>
-                <br>
-                <a href="http://www.louscafesf.com"><button type="button">Check it Out!</button></a>
-                <br>
-                <br>
-                <br>
-                <img src="https://lh3.googleusercontent.com/QkVZLMSMfICYGIKnX25PEX91ZiAdYE28i-3D4WkVcwcRQcu5IJsFpKY0iBodkz6ar63szEHk2LMtIm4NTx-1UJjRt3F2Jdk19hW3MIdNG8OGS7ZSGDjBWNgIE-FBY8fgjUWIKFPCKA=w2400" height="448" width="336">
-                <br>
-                <br>
-                <br>
-                <h1 style="font-family: 'Chewy', cursive;">Marugame Udon</h1>
-                <h3 style="font-family: 'Poppins', sans-serif; margin-left: -50px;">With locations in California and Hawaii, Marugame Udon puts on a show for their customers by giving them the authentic Japanese experience.</h3>
-                <br>
-                <br>
-                <ul>
-                  <li style="font-size: 21px; margin-left: -50px;">Love the traditional Japanese experience</li>
-                  <br>
-                  <li style="font-size: 21px; margin-left: -50px;">Somewhat High price point</li>
-                  <br>
-                  <li style="font-size: 21px; margin-left: -50px;">Recommend Tonkotsu Udon or Nikutama Udon</li>
-                </ul>
-                <br>
-                <a href="https://www.marugameudon.com"><button type="button">Check it Out!</button></a>
-              </div>
-              <div class="col-lg-6">
-                <br>
-                <img style="margin-left: 100px;" src="https://image6.photobiz.com/2327/20_20100408160506_437085_medium.jpg" height="448" width="336">
-                <br>
-                <br>
-                <br>
-                <h1 style="font-family: 'Chewy', cursive; text-align: center;">Golden Island Cafe</h1>
-                <h3 style="font-family: 'Poppins', sans-serif; margin-left: 50px;">Located on Noriega Street in San Francisco, Golden Island is the place to grab a quick bite or just to hangout.</h3>
-                <br>
-                <br>
-                <ul>
-                  <li style="font-size: 21px; margin-left: 50px;">Typical Hangout Spot for High School students</li>
-                  <br>
-                  <li style="font-size: 21px; margin-left: 50px;">Fast service</li>
-                  <br>
-                  <li style="font-size: 21px; margin-left: 50px;">Recommend their Mango Sago</li>
-                </ul>
-                <br>
-                <a href="https://goldenislandcafetogo.com"><button style="margin-left: 100px;" type="button">Check it Out!</button></a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <img style="margin-left: 50px;" src="https://media.timeout.com/images/105289285/630/472/image.jpg" height="336" width="448">
-              </div>
+        <div class="container">
+          <h2 style="font-family: 'Chewy', cursive; text-align: center;">Find Your Next Craving!</h2>
+          <form id="searchForm" class="form-inline text-center">
+            <div class="form-group">
+              <label for="craving">Craving:</label>
+              <input type="text" class="form-control" id="craving" name="craving" placeholder="e.g., Ramen, Boba" required>
             </div>
+            <div class="form-group">
+              <label for="location">Location:</label>
+              <input type="text" class="form-control" id="location" name="location" placeholder="e.g., San Francisco, CA" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+          <hr>
+    
+          <div id="results-section">
+            <h3 style="font-family: 'Poppins', sans-serif; text-align: center;">Recommended Places:</h3>
+            <div id="restaurantList" class="row">
+              </div>
+            <p id="status" class="text-center"></p>
           </div>
-          <br>
-          <br>
         </div>
-        <br>
-        <br>
-        <br>
+
+        <script>
+          // Initialize the Google Maps Places Service
+          let map, service;
+
+          function initMap() {
+            // You can center the map on a default location, like San Francisco
+            const sanFrancisco = new google.maps.LatLng(37.7749, -122.4194);
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: sanFrancisco,
+              zoom: 15,
+            });
+            service = new google.maps.places.PlacesService(map);
+          }
+
+          // Function to handle form submission
+          document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const craving = document.getElementById('craving').value;
+            const locationInput = document.getElementById('location').value;
+            const restaurantList = document.getElementById('restaurantList');
+            const statusElement = document.getElementById('status');
+        
+            restaurantList.innerHTML = ''; // Clear previous results
+            statusElement.textContent = 'Searching...';
+
+            // Use the Google Maps Geocoding API to get coordinates from the location string
+            const geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ 'address': locationInput }, function(results, status) {
+              if (status === 'OK' && results[0]) {
+                const location = results[0].geometry.location;
+
+                // Now use the PlacesService with the geocoded location
+                const request = {
+                    location: location,
+                    radius: '5000', // Search within a 5km radius
+                    type: ['restaurant'],
+                    keyword: craving,
+                    rankby: google.maps.places.RankBy.PROMINENCE
+                };
+
+                service.nearbySearch(request, function(results, status) {
+                  if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+                    statusElement.textContent = `Found ${results.length} places for "${craving}" in ${locationInput}.`;
+                    results.forEach(place => {
+                      // Create a card for each restaurant
+                      const card = document.createElement('div');
+                      card.className = 'col-md-4 col-sm-6';
+                            
+                      let ratingStars = '';
+                      if (place.rating) {
+                        const fullStars = Math.floor(place.rating);
+                        const halfStar = place.rating % 1 !== 0;
+                        for (let i = 0; i < fullStars; i++) {
+                          ratingStars += '<span class="fa fa-star checked"></span>';
+                        }
+                        if (halfStar) {
+                          ratingStars += '<span class="fa fa-star-half-o checked"></span>';
+                        }
+                        ratingStars += ` ${place.rating}`;
+                      }
+
+                      card.innerHTML = `
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title">${place.name}</h4>
+                          </div>
+                          <div class="panel-body">
+                            <p><strong>Rating:</strong> ${ratingStars || 'N/A'}</p>
+                            <p><strong>Address:</strong> ${place.vicinity}</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query_place_id=${place.place_id}" target="_blank" class="btn btn-info btn-block">View on Maps</a>
+                          </div>
+                        </div>
+                      `;
+                      restaurantList.appendChild(card);
+                    });
+                  } else if (status === google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
+                    statusElement.textContent = `No places found for "${craving}" in ${locationInput}.`;
+                  } else {
+                    statusElement.textContent = `Error fetching data: ${status}`;
+                  }
+                });
+              } else {
+                statusElement.textContent = `Geocode was not successful for the following reason: ${status}`;
+              }
+            });
+          });
+
+          // Call initMap when the page loads
+          google.maps.event.addDomListener(window, 'load', initMap);
+        </script>
+
+        <div id="map" style="display: none;"></div>
         <!-- page end -->
 
         <!--Footer-->
         <div class="footer">
             <br>
             <p>
-              &#169 2026 Matthew's Cravings
+              &#169 2025 Matthew's Cravings
             </p>
             <br>
         </div>
